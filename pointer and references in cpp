@@ -1,4 +1,45 @@
-//pointers in deep , references in cpp
+
+//pass by reference using pointers
+
+#include<bits/stdc++.h>
+using namespace std;
+//pass by reference using pointers
+void increment(int *x){
+	//(*x)++; //*x=4 + 1 = 5
+	*x = *x +2; //*x = *x + 2 --> 4 + 2 = 6
+	cout << *x << endl;//*x = value of x
+
+}
+
+int main(){
+	int a = 4;
+	cout << a << endl;
+	increment(&a);//&a = address of a
+	cout << a << endl;
+
+}
+
+--------------------------------------------------------------------------------------
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	int a[10];
+	a[0] = 2;
+	a[1] = 4;
+	cout << "a : " << a << endl;
+	cout << "&a[0] : " << &a[0] << endl;
+	cout << "*a : " << *a << endl;//in array a[10] --> a work like  pointer
+	cout << "a+1 : " << a+1 << endl;
+	cout << "&a[1] : " << &a[1] << endl;
+	cout << "*(a+1) : " << *(a+1) << endl;
+
+}
+
+------------------------------------------------------------------------------------------
+
+//references in cpp
 #include<bits/stdc++.h>
 using namespace std;
 
