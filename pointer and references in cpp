@@ -1,0 +1,22 @@
+//pointers in deep , references in cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	int x = 5;
+	int *p_x = &x;
+	cout << "Address of x : " << &x << endl;
+	cout << "Value of p_x : " << p_x << endl;
+	cout << "Value of *p_x : " << *p_x << endl;// value at p_x
+
+	*p_x = 7;
+	cout << "Value of x : " << x << endl;
+	cout << "Value of p_x + 1 : " << p_x + 1 << endl;
+	int **p_p_x = &p_x;
+	cout << "Address of p_x : " << &p_x << endl;
+	cout << "Value of p_p_x : " << p_p_x << endl;
+	cout << "Value of *p_p_x : " << *p_p_x << endl; // value at p_p_x
+	cout << "Value of **p_p_x : " << **p_p_x << endl; // value at *p_p_x
+	**p_p_x = 9;
+	cout << "Value of x : " << x << endl;
+}
