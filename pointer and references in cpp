@@ -1,6 +1,6 @@
 
 //pass by reference using pointers
-
+//this is good for competative programming in c++
 #include<bits/stdc++.h>
 using namespace std;
 //pass by reference using pointers
